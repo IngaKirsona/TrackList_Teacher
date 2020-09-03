@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		7AFAB8802500AF8600096F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAB87F2500AF8600096F26 /* AppDelegate.swift */; };
 		7AFAB8822500AF8600096F26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAB8812500AF8600096F26 /* SceneDelegate.swift */; };
-		7AFAB8842500AF8600096F26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAB8832500AF8600096F26 /* ViewController.swift */; };
 		7AFAB8872500AF8600096F26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AFAB8852500AF8600096F26 /* Main.storyboard */; };
 		7AFAB8892500AF8800096F26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AFAB8882500AF8800096F26 /* Assets.xcassets */; };
 		7AFAB88C2500AF8800096F26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AFAB88A2500AF8800096F26 /* LaunchScreen.storyboard */; };
+		7AFAB8942500B48200096F26 /* TrackListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAB8932500B48200096F26 /* TrackListTableViewController.swift */; };
+		7AFAB8962500B4FD00096F26 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAB8952500B4FD00096F26 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7AFAB87C2500AF8600096F26 /* TrackList_Teacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackList_Teacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFAB87F2500AF8600096F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFAB8812500AF8600096F26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7AFAB8832500AF8600096F26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7AFAB8862500AF8600096F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AFAB8882500AF8800096F26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AFAB88B2500AF8800096F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AFAB88D2500AF8800096F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AFAB8932500B48200096F26 /* TrackListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListTableViewController.swift; sourceTree = "<group>"; };
+		7AFAB8952500B4FD00096F26 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				7AFAB87F2500AF8600096F26 /* AppDelegate.swift */,
 				7AFAB8812500AF8600096F26 /* SceneDelegate.swift */,
-				7AFAB8832500AF8600096F26 /* ViewController.swift */,
 				7AFAB8852500AF8600096F26 /* Main.storyboard */,
+				7AFAB8932500B48200096F26 /* TrackListTableViewController.swift */,
+				7AFAB8952500B4FD00096F26 /* DetailViewController.swift */,
 				7AFAB8882500AF8800096F26 /* Assets.xcassets */,
 				7AFAB88A2500AF8800096F26 /* LaunchScreen.storyboard */,
 				7AFAB88D2500AF8800096F26 /* Info.plist */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AFAB8842500AF8600096F26 /* ViewController.swift in Sources */,
 				7AFAB8802500AF8600096F26 /* AppDelegate.swift in Sources */,
 				7AFAB8822500AF8600096F26 /* SceneDelegate.swift in Sources */,
+				7AFAB8942500B48200096F26 /* TrackListTableViewController.swift in Sources */,
+				7AFAB8962500B4FD00096F26 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
