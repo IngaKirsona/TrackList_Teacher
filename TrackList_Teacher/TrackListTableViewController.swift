@@ -9,12 +9,27 @@
 import UIKit
 
 class TrackListTableViewController: UITableViewController {
+    
+        var trackList = [
+            "Carly Rae Japsen - Dedicated",
+            "Dj Khaled - father of",
+            "Injury Reserve - Jailbrake",
+            "Jonas Brothers - Happiness Begins ",
+            "Joyner Lucas - adhd",
+            "Maluma - 11-11",
+            "Never Young - LOSER",
+            "Rammstein - rammstein",
+            "Skepta - Ignorance Is Bliss",
+            "Skillet - Victory",
+            "Tylor the Creator - IGOR",
+            "YG - Stop Snitching",
+        ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+         self.clearsSelectionOnViewWillAppear = true
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
          self.navigationItem.rightBarButtonItem = self.editButtonItem
@@ -22,25 +37,32 @@ class TrackListTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return trackList.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "trackListCell", for: indexPath)
+
+        cell.textLabel?.text = trackList[indexPath.row]
+        cell.textLabel?.numberOfLines = 0
+        cell.imageView?.image = UIImage(named: trackList[indexPath.row])
 
         return cell
     }
-    */
+
+    //MARK: Table view delegate
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
 
     /*
     // Override to support conditional editing of the table view.
