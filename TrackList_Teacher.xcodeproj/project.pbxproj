@@ -14,6 +14,8 @@
 		7AFAB88C2500AF8800096F26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AFAB88A2500AF8800096F26 /* LaunchScreen.storyboard */; };
 		7AFAB8942500B48200096F26 /* TrackListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAB8932500B48200096F26 /* TrackListTableViewController.swift */; };
 		7AFAB8962500B4FD00096F26 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAB8952500B4FD00096F26 /* DetailViewController.swift */; };
+		7AFAB89C2500C62500096F26 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAB89B2500C62500096F26 /* Song.swift */; };
+		7AFAB89F2500C75A00096F26 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAB89E2500C75A00096F26 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7AFAB88D2500AF8800096F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AFAB8932500B48200096F26 /* TrackListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListTableViewController.swift; sourceTree = "<group>"; };
 		7AFAB8952500B4FD00096F26 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7AFAB89B2500C62500096F26 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		7AFAB89E2500C75A00096F26 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,58 @@
 		7AFAB87E2500AF8600096F26 /* TrackList_Teacher */ = {
 			isa = PBXGroup;
 			children = (
-				7AFAB87F2500AF8600096F26 /* AppDelegate.swift */,
-				7AFAB8812500AF8600096F26 /* SceneDelegate.swift */,
-				7AFAB8852500AF8600096F26 /* Main.storyboard */,
-				7AFAB8932500B48200096F26 /* TrackListTableViewController.swift */,
-				7AFAB8952500B4FD00096F26 /* DetailViewController.swift */,
+				7AFAB8972500C57200096F26 /* Delegate */,
+				7AFAB89D2500C72600096F26 /* DataManager */,
+				7AFAB89A2500C5EB00096F26 /* Model */,
+				7AFAB8982500C59800096F26 /* View */,
+				7AFAB8992500C5C700096F26 /* Controller */,
 				7AFAB8882500AF8800096F26 /* Assets.xcassets */,
-				7AFAB88A2500AF8800096F26 /* LaunchScreen.storyboard */,
 				7AFAB88D2500AF8800096F26 /* Info.plist */,
 			);
 			path = TrackList_Teacher;
+			sourceTree = "<group>";
+		};
+		7AFAB8972500C57200096F26 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				7AFAB87F2500AF8600096F26 /* AppDelegate.swift */,
+				7AFAB8812500AF8600096F26 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		7AFAB8982500C59800096F26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AFAB8852500AF8600096F26 /* Main.storyboard */,
+				7AFAB88A2500AF8800096F26 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AFAB8992500C5C700096F26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7AFAB8932500B48200096F26 /* TrackListTableViewController.swift */,
+				7AFAB8952500B4FD00096F26 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7AFAB89A2500C5EB00096F26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7AFAB89B2500C62500096F26 /* Song.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AFAB89D2500C72600096F26 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				7AFAB89E2500C75A00096F26 /* DataManager.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AFAB8802500AF8600096F26 /* AppDelegate.swift in Sources */,
+				7AFAB89F2500C75A00096F26 /* DataManager.swift in Sources */,
 				7AFAB8822500AF8600096F26 /* SceneDelegate.swift in Sources */,
 				7AFAB8942500B48200096F26 /* TrackListTableViewController.swift in Sources */,
 				7AFAB8962500B4FD00096F26 /* DetailViewController.swift in Sources */,
+				7AFAB89C2500C62500096F26 /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
